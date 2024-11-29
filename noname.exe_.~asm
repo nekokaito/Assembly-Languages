@@ -1,28 +1,27 @@
-.model small
-.stack
-.data
-.code
+.MODEL SMALL
+.STACK
+.CODE
 
-a db 'Adil $'
-b db '22210276 $'
+MAIN PROC
+MOV AH,1
+INT 21H
+MOV BL,AL
+INT 21H
 
-main proc
+MOV CL, AL
 
-mov ax,@data
-mov ds, ax   ; data segment
 
-lea dx, a
-mov ah, 9
-int 21h
+ADD BL, CL ; BL += CL
 
-lea dx, b
-mov ah, 9
-int 21h
+MOV AH,2
+SUB BL,48
+MOV DL, BL
+INT 21H
 
-mov ah, 4ch
-int 21h
-main endp
+MOV AH,4CH
+INT 21H
+MAIN ENDP
 
-end main
+END MAIN
 
 
