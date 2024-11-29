@@ -11,10 +11,10 @@ INT 21H
 MOV CL, AL
 
 
-ADD BL, CL ; BL += CL
+Sub BL, CL ; BL += CL
 
 MOV AH,2
-SUB BL,48
+Add bl,48
 MOV DL, BL
 INT 21H
 

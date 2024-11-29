@@ -2,7 +2,7 @@ EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
  
 noname.exe_ -- emu8086 assembler version: 4.08  
  
-[ 29/11/2024  --  6:41:08 pm ] 
+[ 29/11/2024  --  6:45:05 pm ] 
  
 ===================================================================================================
 [LINE]     LOC: MACHINE CODE                          SOURCE
@@ -21,10 +21,10 @@ noname.exe_ -- emu8086 assembler version: 4.08
 [  11]    0108: 8A C8                                 MOV CL, AL
 [  12]        :                                       
 [  13]        :                                       
-[  14]    010A: 02 D9                                 ADD BL, CL ; BL += CL
+[  14]    010A: 2A D9                                 Sub BL, CL ; BL += CL
 [  15]        :                                       
 [  16]    010C: B4 02                                 MOV AH,2
-[  17]    010E: 80 EB 30                              SUB BL,48
+[  17]    010E: 80 C3 30                              Add bl,48
 [  18]    0111: 8A D3                                 MOV DL, BL
 [  19]    0113: CD 21                                 INT 21H
 [  20]        :                                       
@@ -58,8 +58,8 @@ EXE HEADER - bytes from 0000 to 01FF inclusive.
 000F: 00      -   SS - stack segment (h.byte)
 0010: 00      -   SP - stack pointer (l.byte)
 0011: 01      -   SP - stack pointer (h.byte)
-0012: 20      -   check sum (l.byte)
-0013: F2      -   check sum (h.byte)
+0012: F8      -   check sum (l.byte)
+0013: 19      -   check sum (h.byte)
 0014: 00      -   IP - instruction pointer (l.byte)
 0015: 00      -   IP - instruction pointer (h.byte)
 0016: 10      -   CS - code segment (l.byte)
