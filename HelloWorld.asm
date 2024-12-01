@@ -14,7 +14,7 @@ main proc
     lea dx, a
     int 21h
     
-    mov ah,4ch
+    mov ah,4ch ; endline
     int 21h
     main endp
 

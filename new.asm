@@ -18,7 +18,7 @@ main proc
     int 21h
     
     ; output
-    mov ah,2
+    mov ah,2 ; 2 means output
     mov dl,bl
     int 21h
     
