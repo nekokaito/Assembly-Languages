@@ -19,8 +19,8 @@ main proc
     int 21h
     
     
-    mov ah, 2
-    mov dl, 10
+    mov ah, 2 ; output mode
+    mov dl, 10 ; new line code
     int 21h
     mov dl, 13
     int 21h
