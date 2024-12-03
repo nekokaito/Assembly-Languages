@@ -1,0 +1,17 @@
+< THE SYMBOL TABLE >  Smaller and Greater.exe_  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+STACK                    	00000     	-5        	SEGMENT   	(ITSELF)  
+CODE                     	00010     	-5        	SEGMENT   	(ITSELF)  
+DATA                     	00010     	-5        	SEGMENT   	(ITSELF)  
+MS1                      	00000     	1         	VAR       	data      
+MS2                      	00009     	1         	VAR       	data      
+MAIN                     	00012     	-1        	NEAR      	data      
+LESS                     	00025     	-1        	LABEL     	data      
+GREAT                    	0002E     	-1        	LABEL     	data      
+EXIT                     	00035     	-1        	LABEL     	data      
+===================================================================================================
+[ 3/12/2024  --  11:39:04 am ] 
+< END >
+ 
