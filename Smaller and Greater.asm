@@ -11,21 +11,21 @@ MAIN PROC
     MOV AX, @DATA
     MOV DS, AX
     
-    
-    
     MOV AH, 1
     INT 21H
     MOV BL, AL
-    SUB BL, 48 
+    SUB BL, 48
+    
+    
     
     
     CMP BL,5
     JG  GREAT
     
     
-    LESS:
-    LEA DX, MS2
+    LESS: 
     MOV AH, 9
+    LEA DX, MS2
     INT 21H
     JMP EXIT
     
@@ -33,8 +33,9 @@ MAIN PROC
     
     
     GREAT:
-    LEA DX,MS1
+    
     MOV AH, 9
+    LEA DX,MS1
     INT 21H
     
     
