@@ -6,4 +6,5 @@ main proc
     mov ah,1
     int 21h
     mov bl,al
+    ; test
 
