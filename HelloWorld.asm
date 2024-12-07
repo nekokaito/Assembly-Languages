@@ -11,8 +11,8 @@ main proc
     mov ds, ax
     
     mov ah, 9 ; string output 
-    lea dx, a
-    int 21h
+    lea dx, a ; string output 
+    int 21h   ; string output 
     
     mov ah,4ch ; endline
     int 21h

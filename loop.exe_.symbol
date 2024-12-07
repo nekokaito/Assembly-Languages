@@ -1,13 +1,13 @@
-< THE SYMBOL TABLE >  noname.exe_  --  emu8086 assembler version: 4.08 
+< THE SYMBOL TABLE >  loop.exe_  --  emu8086 assembler version: 4.08 
 ===================================================================================================
 Name                     	Offset    	Size      	Type      	Segment   
 ===================================================================================================
 STACK                    	00000     	-5        	SEGMENT   	(ITSELF)  
 CODE                     	00010     	-5        	SEGMENT   	(ITSELF)  
 MAIN                     	00000     	-1        	NEAR      	code      
-START                    	00008     	-1        	LABEL     	code      
-EXIT                     	00017     	-1        	LABEL     	code      
+START                    	00011     	-1        	LABEL     	code      
+EXIT                     	00015     	-1        	LABEL     	code      
 ===================================================================================================
-[ 3/12/2024  --  12:51:38 pm ] 
+[ 3/12/2024  --  12:10:41 pm ] 
 < END >
  
